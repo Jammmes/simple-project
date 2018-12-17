@@ -1,0 +1,39 @@
+.button{}
+
+.button_hero{
+    border: none;
+    height: 60px;
+    padding: 0 25px;
+    margin: 10px 10px 0 0;
+    font-size: 1.5em;
+    color: $mainTextColor;
+    &:hover{
+       background:  $heroButtonHoverColor;
+       color: $secondTextColor;
+       cursor: pointer;
+    }
+    @include respondTo(tablets) {
+        font-size: 1em;
+    }
+    @include respondTo(wide-phones) {
+        font-size: 1em;
+    }
+    @include respondTo(phones) {
+        font-size: 1em;
+    }
+    @include respondTo(old-phones) {
+        font-size: 1em;
+    }
+}
+
+.button_modal{
+    margin: 10px auto;
+    border: none;
+    height: 60px;
+    width:80%;
+    padding: 0 25px;
+    background:  $modalButtonColor;
+    &:hover{
+
+    }
+}

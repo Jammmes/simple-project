@@ -1,0 +1,5 @@
+.container{
+    @include positionOnPage();
+    display:flex;
+    flex-direction: column;
+}

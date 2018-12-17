@@ -1,0 +1,11 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    @include respondTo(old-phones) {
+        &:hover{
+            .menu:hover + .navbar{
+                display: flex;
+            }
+        }
+    }
+}

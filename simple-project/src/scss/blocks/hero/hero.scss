@@ -1,0 +1,87 @@
+.hero{
+    background: $mainBgColor;
+    padding: 50px 490px 50px 50px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include respondTo(lg-desktops) {}
+    @include respondTo(small-desktops) {
+        padding: 50px 400px 50px 50px;
+    }
+    @include respondTo(tablets) {
+        padding: 50px 320px 50px 50px;
+    }
+    @include respondTo(wide-phones) {
+        padding: 50px;
+    }
+    @include respondTo(phones) {
+        padding: 20px;
+        align-items: center;
+    }
+    @include respondTo(old-phones) {
+        padding: 20px;
+        align-items: center;
+    }
+}
+
+.hero__title{
+    margin:0 0 20px 0;
+    padding: 0; 
+    font-size: 4em;
+    font-family: $mainFont;
+    font-weight: 500;
+    @include respondTo(small-desktops) {
+        font-size: 3.2em;
+    }
+    @include respondTo(tablets) {
+        font-size: 2.2em; 
+    }
+    @include respondTo(wide-phones) {
+        font-size: 2.2em;
+    }
+    @include respondTo(phones) {
+        font-size: 2em;
+    }
+    @include respondTo(old-phones) {
+        font-size: 2em;
+    }
+}
+
+.hero__text{
+    margin:0 0 20px;
+    padding: 0; 
+    font-family: $mainFont;
+    font-size: 2em;
+    font-weight: 400;
+    @include respondTo(tablets) {
+        font-size: 1.6em; 
+    }
+    @include respondTo(wide-phones) {
+        font-size: 1.5em;
+    }
+    @include respondTo(phones) {
+        font-size: 1.2em;
+    }
+    @include respondTo(old-phones) {
+        font-size: 1.2em;
+    }
+}
+
+.hero__controls{
+    @include respondTo(wide-phones) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    @include respondTo(phones) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+    @include respondTo(old-phones) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } 
+}

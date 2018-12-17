@@ -1,0 +1,96 @@
+// *{
+//     margin: 0;
+//     padding: 0;
+// }
+
+//COLORS
+$heroButtonHoverColor:#d81e75;
+$modalButtonColor:#d81e75;
+$mainBgColor: #ececec;
+$secondBgColor: white;
+$footerBgColor:#d81e75;
+$mainTextColor:black;
+$secondTextColor: white;
+
+//FONTS
+// @font-face {
+//     font-family: Paragon;
+//     src: url("../fonts/Parangon530C.otf");
+// }
+
+$mainFont: 'Source Sans Pro',Sans-serif;
+$secondFont:Arial,Sans-serif;
+//MIXINS
+@mixin respondTo($_media) {
+    @if $_media==old-phones {
+        @media all and (max-width: 450px) {
+            @content;
+        }
+    }
+    @if $_media==phones {
+        @media all and (min-width: 451px) and (max-width: 575px){
+            @content;
+        }
+    }
+    @else if $_media==wide-phones {
+        @media all and (min-width: 576px) and (max-width: 767px) {
+            @content;
+        }
+    }
+    @else if $_media==tablets {
+        @media all and (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+    @else if $_media==small-desktops {
+        @media all and (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @else if $_media==lg-desktops {
+        @media all and (min-width: 1200px) and (max-width: 1440px) {
+            @content;
+        }
+    }
+    @else if $_media==xlg-desktops {
+        @media all and (min-width: 1441px) and (max-width: 1920px) {
+            @content;
+        }
+    }
+}
+
+@mixin positionOnPage() {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// IMPORT
+@import "blocks/page/page";
+@import "blocks/container/container";
+@import "blocks/header/header";
+@import "blocks/menu/menu";
+@import "blocks/navbar/navbar";
+@import "blocks/logo/logo";
+@import "blocks/link/link";
+@import "blocks/hero/hero";
+@import "blocks/button/button";
+@import "blocks/mainblock/mainblock";
+@import "blocks/article/article";
+@import "blocks/linkblock/linkblock";
+@import "blocks/linklist/linklist";
+@import "blocks/footer/footer";
+@import "blocks/modalform/modalform";
+
+//TEMPLATES
+
+/*
+@include respondTo(lg-desktops) {}
+@include respondTo(small-desktops) {}
+@include respondTo(tablets) {}
+@include respondTo(wide-phones) {}
+@include respondTo(phones) {}
+*/
+

@@ -1,0 +1,70 @@
+.navbar{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+height: 120px;
+
+@include respondTo(small-desktops) {
+    height: 80px;
+}
+@include respondTo(tablets) {
+    height: 60px;
+}
+@include respondTo(wide-phones) {
+    height: 60px;
+}
+@include respondTo(phones) {
+    height: 100%;
+    flex-direction: column;
+}
+@include respondTo(old-phones) {
+    display: none;
+    height: 100%;
+    flex-direction: column;
+}
+}
+
+.navbar__item{
+    color: $mainTextColor;
+    height: inherit;
+    border: 1px solid $mainBgColor;
+    font-size: 16px;
+    display: flex;
+    flex: 1;
+    min-width:18%;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        background: $mainBgColor;
+        cursor: pointer;
+    }
+    @include respondTo(lg-desktops) {}
+    @include respondTo(small-desktops) {
+        // background:red;
+        font-size: 14px;
+        min-width:14%;
+    }
+    @include respondTo(tablets) {
+        // background:green;
+        min-width:14%;
+        font-size: 12px;
+    }
+    @include respondTo(wide-phones) {
+        // background:purple;
+        min-width:14%;
+        font-size: 10px;
+    }
+    @include respondTo(phones) {
+        // background:yellowgreen;
+        min-width:99%;
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    @include respondTo(old-phones) {
+        // background:yellow;
+       min-width:99%;
+       font-size: 16px;
+       padding: 10px 0;
+   }
+}

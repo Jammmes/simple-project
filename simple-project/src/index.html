@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Css practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- build:css css/combined.css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- endbuild -->
+</head>
+<body>
+    <div class="page" id = "page"></div>
+    <div class="container">
+        <div class="header">
+            <div class="menu"></div>
+            <div class="navbar">
+                <div class="navbar__item" id = "logo">
+                    <a href = '#' class="link link_nav">
+                        <div class="logo_nav"></div>
+                    </a>
+                </div>
+                <div class="navbar__item">
+                    <a href = '#' class="link link_nav">DOWNLOAD</a>
+                </div>
+                <div class="navbar__item">
+                    <a href = '#' class="link link_nav">DOCUMENTATION</a>
+                </div>
+                <div class="navbar__item">
+                    <a href = '#' class="link link_nav">NEWS</a>
+                </div>
+                <div class="navbar__item">
+                    <a href = '#' class="link link_nav">RESOURSES</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero">
+                <h1 class="hero__title">Respond to your user's browser features</h1>
+                <h3 class="hero__text">Modernizr tells you what HTML, CSS and JavaScript features the user’s browser has to offer.</h3>
+                <div class="hero__controls">
+                    <button class="button button_hero">Add your detects</button>
+                    <button class="button button_hero">Development build</button>
+                </div>
+        </div>
+        <div class="mainblock">
+                <div class="mainblock__articles">
+                    <div class="article">
+                        <h1 class="article__title">What is Modernizr?</h1>
+                        <div class="article__text">
+                            It’s a collection of superfast tests – or “detects” as we like to call them – which run as your web page loads, then you can use the results to tailor the experience to the user.
+                        </div>
+                    </div>
+                    <div class="article">
+                        <h1 class="article__title">Why do I need it?</h1>
+                        <div class="article__text">
+                            <p>
+                                All web developers come up against differences between browsers and devices. That’s largely due to different feature sets: the latest versions of the popular browsers can do some awesome things which older browsers can’t – but we still have to support the older ones.
+                            </p>
+                            <p>
+                                Modernizr makes it easy to deliver tiered experiences: make use of the latest and greatest features in browsers which support them, without leaving less fortunate users high and dry.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainblock__aside">
+                    <div class="linkblock">
+                        <h3 class="linkblock__title">Getting Started</h3>
+                        <div class="linklist">
+                            <a href="#" class="link link_main">Modernizr explained</a>
+                            <a href="#" class="link link_main">What is feature detection?</a>
+                            <a href="#" class="link link_main">Using Modernizr with JavaScript</a>
+                            <a href="#" class="link link_main">Using Modernizr with CSS</a>
+                        </div>
+                    </div>
+                    <div class="linkblock">
+                            <h3 class="linkblock__title">Latest News</h3>
+                            <div class="linklist">
+                                <a href="#" class="link link_main">Modernizr 3.5.0</a>
+                                <a href="#" class="link link_main">Modernizr 3.4.0</a>
+                                <a href="#" class="link link_main">Modernizr 3.3.1</a>
+                                <a href="#" class="link link_main">Modernizr 3.3.0</a>
+                            </div>
+                    </div>
+                    <div class="linkblock">
+                            <h3 class="linkblock__title">Talk to us</h3>
+                            <div class="linklist">
+                                <a href="#" class="link link_main">Twitter</a>
+                                <a href="#" class="link link_main">StackOverflow</a>
+                                <a href="#" class="link link_main">GitHub</a>
+                                <a href="#" class="link link_main">Contact</a>
+                            </div>
+                    </div>
+                </div>
+        </div>
+        <div class="footer">
+            <div class="footer__links">
+                <p>
+                    Made with love by 
+                    <a href="#" class="link link_footer">Faruk</a>,
+                    <a href="#" class="link link_footer">Paul</a>,
+                    <a href="#" class="link link_footer">Alex</a>,
+                    <a href="#" class="link link_footer">Rayan</a>,
+                    <a href="#" class="link link_footer">Patrik</a>,
+                    <a href="#" class="link link_footer">Stu</a>, and
+                   <a href="#" class="link link_footer">Richard</a>
+                </p>
+                <p>
+                    <a href="#" class="link link_footer">Subscribe to the feed</a>,
+                    <a href="#" class="link link_footer">follow on twitter</a>, or 
+                    <a href="#" class="link link_footer">contact us.</a>
+                    <a href="#" class="link link_footer">Donations are cool, too.</a>
+                </p>
+            </div>
+            <a href="#" class="link link_footer">
+                <img class="footer__logo" src = 'img/footer_logo.svg' alt ='...'/>
+            </a>
+        </div>
+    </div>
+        <form action="" class="modalform" id = "modal">
+            <h3 class="modalform__title">Login</h3>
+            <input class = "modalform__input" type="text" placeholder="email"/>
+            <input class = "modalform__input" type="passwprd" placeholder="password"/>
+            <input type="submit" class="button button_modal" value="Login">
+        </form>
+    <script src="./js/main.js"></script>
+</body>
+</html>

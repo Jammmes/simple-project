@@ -1,0 +1,35 @@
+.linkblock{
+    background: $secondBgColor;
+    font-family: $mainFont;
+    margin:15px;
+    width: calc(47% - 1em);
+    @include respondTo(small-desktops) {
+        width: calc(70% - 1em);
+    }
+    @include respondTo(tablets) {
+        width: calc(80% - 1em);
+    }
+    @include respondTo(wide-phones) {
+        width: 100%;
+        margin: 10px;
+    }
+    @include respondTo(phones) {
+        width: 100%;
+        margin: 10px;
+    }
+    @include respondTo(old-phones) {
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+.linkblock__title{
+    border-bottom: 1px solid $mainBgColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px 0;
+    font-weight: 400;
+    text-align: center;
+}

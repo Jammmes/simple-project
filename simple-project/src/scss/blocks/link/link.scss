@@ -1,0 +1,23 @@
+.link{
+    color: $mainTextColor;
+}
+.link_nav{
+    text-decoration: none;
+    font-family: $secondFont;
+}
+
+.link_main{
+    text-decoration: none;
+    display: block;
+    padding-bottom: 1em;
+    &:hover{
+        color:red;
+    }
+}
+
+.link_footer{
+    color:$secondTextColor;
+    &:hover{
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,17 @@
+.linklist{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    @include respondTo(wide-phones) {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    @include respondTo(phones) {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+    @include respondTo(old-phones) {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}
